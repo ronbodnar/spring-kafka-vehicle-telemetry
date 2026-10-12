@@ -1,0 +1,10 @@
+app:
+  kafka:
+    topic: vehicle-telemetry
+    partitions: 3
+    replicas: 1
+
+spring:
+  kafka:
+    producer:
+      value-serializer: com.ronbodnar.vehicletelemetry.serialization.VehicleTelemetryEventSerializer
